@@ -11,7 +11,7 @@ project.clj:
 ```clojure
   :profiles {:cljfmt {:plugins [[lein-cljfmt "0.3.0"]
                                 [lein-parent "0.2.1"]]
-                      :parent-project {:path "../pl-cljfmt/project.clj"
+                      :parent-project {:path "../pl-clojure-style/project.clj"
                                        :inherit [:cljfmt]}}}
   :aliases {"cljfmt" ["with-profile" "+cljfmt" "cljfmt"]}
 ```
