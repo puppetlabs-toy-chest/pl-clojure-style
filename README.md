@@ -19,6 +19,30 @@ project.clj:
 Using a profile makes it possible to run normal lein commands without having
 this repository present.
 
+## Other style considerations
+
+There are a few things that aren't automatically enforced by cljfmt.
+
+### Line length
+
+Not a hard rule, but try to keep it under 80 characters.
+
+### Aligning values in maps and lets
+
+Don't.
+
+Good:
+```clojure
+{:key "some stuff"
+ :another_much_longer_key "other stuff"}
+```
+Bad:
+```clojure
+{:key                     "some stuff"
+ :another_much_longer_key "other stuff"}
+```
+
+
 ## Editor specific settings
 
 ### Vim
