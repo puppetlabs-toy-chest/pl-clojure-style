@@ -1,6 +1,6 @@
-# pl-cljfmt
+# pl-clojure-style
 
-Rules for cljfmt at puppetlabs
+Centralized clojure style settings for puppetlabs projects
 
 ## Usage
 
@@ -18,3 +18,24 @@ project.clj:
 
 Using a profile makes it possible to run normal lein commands without having
 this repository present.
+
+## Editor specific settings
+
+### Vim
+
+Add the settings from [indents.vim](indents.vim) to your .vimrc.
+
+### Emacs
+
+Add the settings from [indents.el](indents.el) to your emacs
+configuration.
+
+### Cursive Clojure in IntelliJ
+
+Cursive doesn't currently seem to have a way to add new rules for custom
+indentation, but the built-in ones cover most of what we use (including
+compojure, schema, test libraries, etc).
+
+You should set the general indentation settings as shown:
+
+![IntelliJerks](cursive.png)

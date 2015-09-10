@@ -1,0 +1,10 @@
+;; For use with clojure-mode in emacs
+(put 'GET 'clojure-backtracking-indent '(2))
+(put 'POST 'clojure-backtracking-indent '(2))
+(put 'PUT 'clojure-backtracking-indent '(2))
+(put 'DELETE 'clojure-backtracking-indent '(2))
+(put 'HEAD 'clojure-backtracking-indent '(2))
+(put 'ANY 'clojure-backtracking-indent '(2))
+(put 'context 'clojure-backtracking-indent '(2))
+(put 'defservice 'clojure-backtracking-indent '((2)))
+(put 'try+ 'clojure-indent-function 0)
