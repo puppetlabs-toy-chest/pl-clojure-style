@@ -56,10 +56,22 @@ configuration.
 
 ### Cursive Clojure in IntelliJ
 
-Cursive doesn't currently seem to have a way to add new rules for custom
-indentation, but the built-in ones cover most of what we use (including
-compojure, schema, test libraries, etc).
-
 You should set the general indentation settings as shown:
 
 ![IntelliJerks](cursive.png)
+
+To set indentation parameters for custom macros, place the cursor on a call to the
+macro, and wait for the light-bulb icon to appear.  Click it and then click on
+"Configure Indentation parameters":
+
+![IntelliJerks2](cursive-indentation-params.png)
+
+After that your custom form should appear in the 'Form Parameters' settings, so you
+can modify the indentation rules there if you choose:
+
+![IntelliJerks3](cursive-form-params.png)
+
+Also... it's possible to export these settings from Cursive as a jar file that others
+can import.  Once we get some mileage on this stuff, we should probably do that and
+include the jar here.
+
