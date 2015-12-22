@@ -19,6 +19,26 @@ project.clj:
 Using a profile makes it possible to run normal lein commands without having
 this repository present.
 
+
+Then run
+
+```clojure
+lein cljfmt check
+```
+to get a report of the formatting issues, and
+
+```clojure
+lein cljfmt fix
+```
+
+to fix the formatting.
+
+Both of these commands take an optional argument of a file path, to check or
+fix a specific file.
+
+For more information, see the documentation for
+[cljfmt](https://github.com/weavejester/cljfmt), the library this uses.
+
 ## Other style considerations
 
 There are a few things that aren't automatically enforced by cljfmt.
