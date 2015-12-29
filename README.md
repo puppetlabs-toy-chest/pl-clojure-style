@@ -22,12 +22,12 @@ this repository present.
 
 Then run
 
-```clojure
+```
 lein cljfmt check
 ```
 to get a report of the formatting issues, and
 
-```clojure
+```
 lein cljfmt fix
 ```
 
